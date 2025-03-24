@@ -1,0 +1,414 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 50px 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2 a{
+    color: white;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+.exit{
+    display:none;
+}
+.open{
+    background:green;
+    padding: .4rem;
+    position:absolute;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #4CAF50;
+}
+
+section {
+    padding: 50px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+#skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    width: 80%;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.skill-bar {
+    background: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-bar-inner {
+    height: 20px;
+    background: #4CAF50;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#project-cards {
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   place-content: center;
+   gap:1rem;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form {
+    width: 50%;
+    margin: 0 auto;
+}
+.contact-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2px;
+    gap:2rem;
+    background: red;
+}
+#contact-form input, #contact-form textarea, #contact-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#contact-form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+}
+
+footer{
+    background:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:50%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.links h2{
+    color:white;
+}
+.links ul{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 100%;
+}
+.links ul li{
+    text-align: left;
+    cursor: pointer;
+} 
+.links ul li a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+    padding:0.5rem;
+}
+.links ul li a:hover{
+    transform: translate(5px,4px);
+    background: green;
+    font-size: .8rem;
+}
+
+
+
+.projects{
+    width:50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.projects h2{
+    color:white;
+}
+.projects ul{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 100%;
+}
+.projects ul li{
+    cursor: pointer;
+    text-align: left;
+} 
+.projects ul li a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+    padding:0.5rem;
+}
+.projects ul li a:hover{
+    transform: translate(5px,4px);
+    font-size: 1.2rem;
+    background: green;
+    font-size: .8rem;
+}
+.footer_links{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+/*********my cv ****************/
+
+/*.cv-field{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 7rem;
+}
+.cv-field button{
+    background:green;
+    color:white;
+    padding:.8rem;
+    border: 0;
+    cursor: pointer;
+}
+.cv-field button a{
+    text-decoration: none;
+    color:white;
+}*/
+
+.contact-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.cv-field, 
+#contact-form {
+    flex: 1 1 45%; /* Items take up 45% width of the row, will adjust based on screen size */
+    min-width: 280px; /* Ensures proper display on smaller screens */
+}
+
+#contact-form input, 
+#contact-form textarea, 
+#contact-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#contact-form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.cv-field button {
+    background: green;
+    color: white;
+    padding: 0.8rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.cv-field button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Small screens adjustments */
+@media screen and (max-width: 768px) {
+    .contact-field {
+        flex-direction: column; /* Stack items on top of each other */
+        align-items: center;
+    }
+
+    .cv-field, 
+    #contact-form {
+        flex: 1 1 100%; /* Items take full width on smaller screens */
+    }
+}
+
+
+
+/*  -----------------------------Responsivenesss--------------------*/
+
+/************************Small screen*************************/
+@media screen and (max-width:800px){
+    nav{
+        height: 50px;
+        direction: flex;
+    }
+    .exit{
+        display: block;
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+    }
+ .control_nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    background:#333;
+    justify-content: flex-start;
+    top:4.4rem;
+    left:0rem;
+    padding:10px;
+    transform: scale(0);
+    min-width: 300px;
+  }
+
+  .open-nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    background:#333;
+    justify-content: flex-start;
+    top:4rem;
+    left:0;
+    padding:10px;
+    min-width: 300px;
+    transition: all .3s ease;
+  }
+   nav ul li{
+    display: block;
+    padding:.7rem;
+   }
+   nav ul li:first-child{
+    background-color: green;
+    color:red;
+    border-radius: 50%;
+    padding:.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    width: 1rem;
+   }
+   .open{
+    display: block;
+    right: 3rem;
+    cursor: pointer;
+   }
+}
+
+
+@media  screen and (max-width:525px) {
+   .footer_links{
+     flex-direction: column;
+     gap:1rem;
+   }
+}
+
+@media  screen and (max-width:340px) {
+    .project-card h3{
+        font-size: 1rem;
+    }
+    #project-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-content: center;
+        justify-content: center;
+    }
+}
+
+
+@media  screen and (max-width:275px) {
+    .control_nav{
+   min-width:100px;
+    }
+}
+@media  screen and (max-width:200px) {
+   .open{
+    transform: translate(40px);
+    font-size: .7rem;
+    padding:0;
+   }
+   nav h2 a{
+    font-size: 1rem;
+   }
+}
+/*-----------------------------End of Responsiveness----------------*/

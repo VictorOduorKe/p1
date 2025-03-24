@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h2><a href="#hero">Home</a></h2>
+        <div class="list">
+            <ul class="control_nav">
+                <li class="exit">X</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv_field">Download CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+      
+        <i class="open">Open</i>
+    </nav>
+    <header id="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my projects and skills</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Profile Image" class="profile-image">
+            <p>Hello! I'm a passionate developer skilled in creating dynamic websites.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-list"></div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="project-cards"></div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-field">
+                <div class="cv-field">
+                    <h2>Download My CV Below</h2>
+                    <button><a href="cv">DOWNLOAD</a></button>
+                </div>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" name="name" id="name" required>
+                    <input type="email" placeholder="Your Email" name="email" id="email" required>
+                    <textarea placeholder="Your Message" name="message" id="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer_links">
+            <div class="links">
+                <h2>Social Links</h2>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">X</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="projects">
+                <h2>Projects</h2>
+               <ul>
+                <li><a href="">Web Screen Recorder</a></li>
+                <li><a href="">Login Form</a></li>
+                <li><a href="">Web Screen Recorder</a></li>
+                <li><a href="">Web Screen Recorder</a></li>
+                <li><a href="">Email subscription</a></li>
+               </ul>
+            </div>
+        </div>
+       
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
